@@ -34,7 +34,7 @@ hideInToc: true
 # Retrieval Augmented Generation
 Foundations of Research Computing (FORC) Camp
 
-_Sajid Ali_, _NYU Research Technology Services_ <a href="https://services.rt.nyu.edu/" class="ns-c-iconlink"><mdi-open-in-new /></a>  
+_Sajid Ali_, _NYU Research Technology Services_ <a href="https://services.rt.nyu.edu/" class="ns-c-iconlink"><carbon-launch /></a>  
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/NYU-RTS/rag-forc" target="_blank" class="slidev-icon-btn">
