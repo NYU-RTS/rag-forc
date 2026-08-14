@@ -1,0 +1,18 @@
+{
+  "collection": "ms_rag_forc_55a5f191",
+  "failed_files": [],
+  "indexed_chunks": 1,
+  "indexed_files": 1,
+  "last_completed_at": "2026-08-14T15:26:56.056018Z",
+  "last_started_at": "2026-08-14T15:26:55.040045Z",
+  "last_success_at": "2026-08-14T15:26:56.056018Z",
+  "milvus_uri": "~/.memsearch/milvus.db",
+  "operation": "index",
+  "paths": [
+    "/Users/ss19980/Documents/packages/rag-forc/.memsearch/memory"
+  ],
+  "schema_version": 1,
+  "status": "ok",
+  "total_files": 1,
+  "updated_at": "2026-08-14T15:26:56.056018Z"
+}
