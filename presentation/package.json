@@ -8,13 +8,13 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^52.1.0",
+    "@slidev/cli": "^52.19.0",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
-    "@slidev/types": "^52.1.0",
-    "mermaid": "^11.10.1",
-    "playwright-chromium": "^1.55.0",
+    "@slidev/types": "^52.19.0",
+    "mermaid": "^11.16.1",
+    "playwright-chromium": "^1.62.1",
     "slidev-theme-academic": "^2.1.0",
-    "vue": "^3.5.20"
+    "vue": "^3.5.41"
   }
 }
