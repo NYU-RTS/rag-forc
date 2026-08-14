@@ -238,8 +238,17 @@ figureUrl: docling_overview.png
 layout: default
 transition: fade-out
 ---
-# Demo with NYU Library Research Guides!
-- Compile a list of URLs for the reseasch guides
+# Why services.rt.nyu.edu as our data source?
+- We (the instructors) own this documentation and consent to it being indexed and queried for this workshop.
+- Using someone else's content for RAG/fine-tuning without permission can raise trademark and IP issues — consent isn't optional just because data is public.
+- Rule of thumb: if you didn't write it, don't host it, or don't have explicit permission, don't feed it into a generative AI pipeline without checking first.
+
+---
+layout: default
+transition: fade-out
+---
+# Demo with NYU Research Technology Services docs!
+- Compile a list of URLs from the RT Services sitemap
 - Use docling to process HTML pages
 - Use `MilvusLite` to create a BM25 index
 - Try this yourself during the hands-on later!
