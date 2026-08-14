@@ -32,19 +32,15 @@ hideInToc: true
 ---
 
 # Retrieval Augmented Generation
-Foundations of Research Computing (FORC) Camp 2025
+Foundations of Research Computing (FORC) Camp
 
+_Sajid Ali_, _NYU Research Technology Services_ <a href="https://services.rt.nyu.edu/" class="ns-c-iconlink"><mdi-open-in-new /></a>  
 
 <div class="abs-br m-6 text-xl">
-  <a href="https://github.com/NYU-RTS/rag-forc-2025" target="_blank" class="slidev-icon-btn">
+  <a href="https://github.com/NYU-RTS/rag-forc" target="_blank" class="slidev-icon-btn">
     <carbon:logo-github />
   </a>
 </div>
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
 
 ---
 hideInToc: true
