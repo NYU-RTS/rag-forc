@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -22,9 +20,13 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: read
+      pages: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
@@ -40,7 +42,9 @@ jobs:
         run: pnpm exec playwright install --with-deps
 
       - name: Build
-        run: nr build --base /${{github.event.repository.name}}/
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
+        run: nr build --base "/${REPO_NAME}/"
                
       - name: Setup Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
@@ -55,6 +59,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     name: Deploy
     steps:
       - name: Deploy to GitHub Pages
