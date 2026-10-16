@@ -42,7 +42,9 @@ jobs:
         run: pnpm exec playwright install --with-deps
 
       - name: Build
-        run: nr build --base /${{github.event.repository.name}}/
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
+        run: nr build --base "/${REPO_NAME}/"
                
       - name: Setup Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
